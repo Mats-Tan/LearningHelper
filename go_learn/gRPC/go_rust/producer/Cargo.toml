@@ -1,0 +1,27 @@
+[package]
+name = "producer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "example"
+path = "src/example.rs"
+
+# [[bin]]
+# name = "example"
+# path = "src/example.rs"
+
+[dependencies]
+tonic = "0.10.0"
+# prost = "0.12"
+tokio = { version = "1", features = ["full"] }
+prost = "0.12"
+# prost-types = "0.6"
+protobuf = "3.2"
+grpcio = { version = "0.13", default-features = false, features = ["protobuf-codec"] }
+# example = {path = "src/example.rs"}
+
+[build-dependencies]
+tonic-build = "0.10"
+
