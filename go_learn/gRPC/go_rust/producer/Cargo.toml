@@ -19,7 +19,8 @@ tokio = { version = "1", features = ["full"] }
 prost = "0.12"
 # prost-types = "0.6"
 protobuf = "3.2"
-grpcio = { version = "0.13", default-features = false, features = ["protobuf-codec"] }
+# grpcio = { version = "0.13", default-features = false, features = ["protobuf-codec"] }
+grpcio = { version = "0.13" }
 # example = {path = "src/example.rs"}
 
 [build-dependencies]

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\tool\args.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\tool\ciphers.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\tool\client.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\tool\const.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\tool\digest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\tool\fd.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\tool\file.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\tool\generate_ech.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\tool\generate_ed25519.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\tool\genrsa.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\tool\pkcs12.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\tool\rand.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\tool\server.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\tool\sign.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\tool\speed.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\tool\tool.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\tool\transport_common.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A29C1ECB-9BFB-392A-BB98-27E64F9BF529}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

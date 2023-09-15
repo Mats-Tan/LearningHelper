@@ -1,0 +1,25 @@
+# CMake generation dependency list for this directory.
+D:/Environment/CMake/share/cmake-3.24/Modules/BasicConfigVersion-ExactVersion.cmake.in
+D:/Environment/CMake/share/cmake-3.24/Modules/CMakeDependentOption.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CMakeParseArguments.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CTest.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CTestTargets.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CTestUseLaunchers.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CheckCXXSourceCompiles.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CheckIncludeFile.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CheckLibraryExists.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/DartConfiguration.tcl.in
+D:/Environment/CMake/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/FindPackageMessage.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/FindThreads.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/GNUInstallDirs.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake
+D:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc/third_party/abseil-cpp/CMake/AbseilDll.cmake
+D:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc/third_party/abseil-cpp/CMake/AbseilHelpers.cmake
+D:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc/third_party/abseil-cpp/CMake/abslConfig.cmake.in
+D:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc/third_party/abseil-cpp/CMakeLists.txt
+D:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc/third_party/abseil-cpp/absl/copts/AbseilConfigureCopts.cmake
+D:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc/third_party/abseil-cpp/absl/copts/GENERATED_AbseilCopts.cmake

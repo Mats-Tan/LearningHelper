@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C48D9EBD-5167-3CBD-88FD-9237FFBD4740}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\re2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\re2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\re2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\re2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\re2\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc/third_party/re2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Environment\CMake\bin\cmake.exe -SD:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc -BE:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build --check-stamp-file E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/third_party/re2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Environment\CMake\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Environment\CMake\share\cmake-3.24\Modules\CMakePackageConfigHelpers.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CTest.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CTestTargets.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CTestUseLaunchers.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\DartConfiguration.tcl.in;D:\Environment\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\WriteBasicConfigVersionFile.cmake;D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\re2\re2Config.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc/third_party/re2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Environment\CMake\bin\cmake.exe -SD:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc -BE:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build --check-stamp-file E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/third_party/re2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Environment\CMake\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Environment\CMake\share\cmake-3.24\Modules\CMakePackageConfigHelpers.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CTest.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CTestTargets.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CTestUseLaunchers.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\DartConfiguration.tcl.in;D:\Environment\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\WriteBasicConfigVersionFile.cmake;D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\re2\re2Config.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc/third_party/re2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Environment\CMake\bin\cmake.exe -SD:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc -BE:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build --check-stamp-file E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/third_party/re2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Environment\CMake\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Environment\CMake\share\cmake-3.24\Modules\CMakePackageConfigHelpers.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CTest.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CTestTargets.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CTestUseLaunchers.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\DartConfiguration.tcl.in;D:\Environment\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\WriteBasicConfigVersionFile.cmake;D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\re2\re2Config.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc/third_party/re2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Environment\CMake\bin\cmake.exe -SD:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc -BE:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build --check-stamp-file E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/third_party/re2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Environment\CMake\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Environment\CMake\share\cmake-3.24\Modules\CMakePackageConfigHelpers.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CTest.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CTestTargets.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CTestUseLaunchers.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\DartConfiguration.tcl.in;D:\Environment\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\WriteBasicConfigVersionFile.cmake;D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\re2\re2Config.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\ZERO_CHECK.proj">
+      <Project>{0EC3DA89-2D1E-3011-8299-20DEE3E64A12}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\charclass_test.vcxproj">
+      <Project>{CC90277C-2383-3CED-BFCB-AC8C2A49029E}</Project>
+      <Name>charclass_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\compile_test.vcxproj">
+      <Project>{51E5F3E4-E920-3467-86CD-3BE3D91B2046}</Project>
+      <Name>compile_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\dfa_test.vcxproj">
+      <Project>{9F576B44-C5FA-370B-B0BD-189122917821}</Project>
+      <Name>dfa_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\exhaustive1_test.vcxproj">
+      <Project>{4EBAA2D3-BF29-329A-B806-4A12B5A1B51B}</Project>
+      <Name>exhaustive1_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\exhaustive2_test.vcxproj">
+      <Project>{FABFF46C-C3FF-36D0-97A9-41D18F386D2B}</Project>
+      <Name>exhaustive2_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\exhaustive3_test.vcxproj">
+      <Project>{86B4CF34-DCC8-3547-80CB-6CCD2ABAA656}</Project>
+      <Name>exhaustive3_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\exhaustive_test.vcxproj">
+      <Project>{03D20E38-A463-35EB-8CCE-968FF49CE792}</Project>
+      <Name>exhaustive_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\filtered_re2_test.vcxproj">
+      <Project>{63204358-9832-3E3A-9C85-082767390064}</Project>
+      <Name>filtered_re2_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\mimics_pcre_test.vcxproj">
+      <Project>{711666B0-C36E-3747-937A-B04E44F38D19}</Project>
+      <Name>mimics_pcre_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\parse_test.vcxproj">
+      <Project>{9E157C88-D6C1-32AF-AA95-36D7CF31CD7C}</Project>
+      <Name>parse_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\possible_match_test.vcxproj">
+      <Project>{5DEE0C56-74D4-391E-95F2-0BA4087AB00F}</Project>
+      <Name>possible_match_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\random_test.vcxproj">
+      <Project>{170FD991-D66E-34F2-B9B6-FD0DE6691297}</Project>
+      <Name>random_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\re2.vcxproj">
+      <Project>{8A441C71-CB04-36BC-9376-FF62945C35FF}</Project>
+      <Name>re2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\re2_arg_test.vcxproj">
+      <Project>{AB2E47C5-AD59-3F0F-AA38-1DE6CBA9F4BE}</Project>
+      <Name>re2_arg_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\re2_test.vcxproj">
+      <Project>{77173EB8-9E36-370B-B715-50B727366C44}</Project>
+      <Name>re2_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\regexp_benchmark.vcxproj">
+      <Project>{9F7E2461-07C2-3282-929D-8D1CD729748A}</Project>
+      <Name>regexp_benchmark</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\regexp_test.vcxproj">
+      <Project>{ADCDE78A-DD9F-3DDB-8579-F550C7AF5E8B}</Project>
+      <Name>regexp_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\required_prefix_test.vcxproj">
+      <Project>{3F79F5D6-63EB-3C39-9599-819C4DA5173F}</Project>
+      <Name>required_prefix_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\search_test.vcxproj">
+      <Project>{B579E54A-E680-34B7-90A7-0E9381E72CF2}</Project>
+      <Name>search_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\set_test.vcxproj">
+      <Project>{55BA1B32-550D-34AB-8CDA-6AC7E7FDDC12}</Project>
+      <Name>set_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\simplify_test.vcxproj">
+      <Project>{43700D6F-3D33-376F-885A-1B2D869EB6AB}</Project>
+      <Name>simplify_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\string_generator_test.vcxproj">
+      <Project>{4475D8D9-567F-30A6-8360-C44444A427F6}</Project>
+      <Name>string_generator_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\third_party\re2\testing.vcxproj">
+      <Project>{592E1988-8F78-3135-8F88-C7ECA1221CBE}</Project>
+      <Name>testing</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

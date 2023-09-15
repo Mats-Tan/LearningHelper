@@ -1,0 +1,11 @@
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\deps\ppv_lite86-d809514dcb371ff3.rmeta: D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\lib.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\soft.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\types.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\x86_64\mod.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\x86_64\sse2.rs
+
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\deps\libppv_lite86-d809514dcb371ff3.rlib: D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\lib.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\soft.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\types.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\x86_64\mod.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\x86_64\sse2.rs
+
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\deps\ppv_lite86-d809514dcb371ff3.d: D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\lib.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\soft.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\types.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\x86_64\mod.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\x86_64\sse2.rs
+
+D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\lib.rs:
+D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\soft.rs:
+D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\types.rs:
+D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\x86_64\mod.rs:
+D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\ppv-lite86-0.2.17\src\x86_64\sse2.rs:

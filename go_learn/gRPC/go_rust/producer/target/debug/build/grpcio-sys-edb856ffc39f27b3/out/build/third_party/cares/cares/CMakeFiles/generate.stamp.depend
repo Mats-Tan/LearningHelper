@@ -1,0 +1,21 @@
+# CMake generation dependency list for this directory.
+D:/Environment/CMake/share/cmake-3.24/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+D:/Environment/CMake/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CPack.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CPackComponent.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CheckCXXSourceCompiles.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CheckFunctionExists.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CheckIncludeFile.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CheckIncludeFileCXX.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CheckIncludeFiles.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CheckLibraryExists.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CheckStructHasMember.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CheckSymbolExists.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CheckTypeSize.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/GNUInstallDirs.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake
+D:/Environment/CMake/share/cmake-3.24/Templates/CPackConfig.cmake.in
+D:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc/third_party/cares/cares/CMakeLists.txt
+D:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc/third_party/cares/cares/c-ares-config.cmake.in
+D:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc/third_party/cares/cares/libcares.pc.cmake

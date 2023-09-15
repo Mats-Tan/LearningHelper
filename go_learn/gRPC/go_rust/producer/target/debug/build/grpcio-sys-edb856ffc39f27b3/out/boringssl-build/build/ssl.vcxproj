@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5784E8D1-F795-3F34-9629-C408EC6A8E31}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ssl</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ssl.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ssl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ssl.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ssl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ssl.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ssl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ssl.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ssl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro -Brepro</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/boringssl-src-0.6.0+e46383f/boringssl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Environment\CMake\bin\cmake.exe -SD:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/boringssl-src-0.6.0+e46383f/boringssl -BE:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/boringssl-build/build --check-stamp-file E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/boringssl-build/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Environment\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\FindThreads.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\3.24.0-rc2\CMakeCCompiler.cmake;E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\3.24.0-rc2\CMakeCXXCompiler.cmake;E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\3.24.0-rc2\CMakeRCCompiler.cmake;E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\3.24.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/boringssl-src-0.6.0+e46383f/boringssl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Environment\CMake\bin\cmake.exe -SD:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/boringssl-src-0.6.0+e46383f/boringssl -BE:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/boringssl-build/build --check-stamp-file E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/boringssl-build/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Environment\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\FindThreads.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\3.24.0-rc2\CMakeCCompiler.cmake;E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\3.24.0-rc2\CMakeCXXCompiler.cmake;E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\3.24.0-rc2\CMakeRCCompiler.cmake;E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\3.24.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/boringssl-src-0.6.0+e46383f/boringssl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Environment\CMake\bin\cmake.exe -SD:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/boringssl-src-0.6.0+e46383f/boringssl -BE:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/boringssl-build/build --check-stamp-file E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/boringssl-build/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Environment\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\FindThreads.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\3.24.0-rc2\CMakeCCompiler.cmake;E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\3.24.0-rc2\CMakeCXXCompiler.cmake;E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\3.24.0-rc2\CMakeRCCompiler.cmake;E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\3.24.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/boringssl-src-0.6.0+e46383f/boringssl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Environment\CMake\bin\cmake.exe -SD:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/boringssl-src-0.6.0+e46383f/boringssl -BE:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/boringssl-build/build --check-stamp-file E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/boringssl-build/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Environment\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\FindThreads.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\Environment\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\3.24.0-rc2\CMakeCCompiler.cmake;E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\3.24.0-rc2\CMakeCXXCompiler.cmake;E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\3.24.0-rc2\CMakeRCCompiler.cmake;E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\3.24.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\bio_ssl.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\d1_both.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\d1_lib.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\d1_pkt.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\d1_srtp.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\dtls_method.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\dtls_record.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\encrypted_client_hello.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\extensions.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\handoff.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\handshake.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\handshake_client.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\handshake_server.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\s3_both.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\s3_lib.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\s3_pkt.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\ssl_aead_ctx.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\ssl_asn1.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\ssl_buffer.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\ssl_cert.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\ssl_cipher.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\ssl_file.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\ssl_key_share.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\ssl_lib.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\ssl_privkey.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\ssl_session.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\ssl_stat.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\ssl_transcript.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\ssl_versions.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\ssl_x509.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\t1_enc.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\tls13_both.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\tls13_client.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\tls13_enc.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\tls13_server.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\tls_method.cc" />
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\boringssl-src-0.6.0+e46383f\boringssl\src\ssl\tls_record.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\ZERO_CHECK.proj">
+      <Project>{E3D2EF50-28F5-3275-A9A8-1CD36A65DD95}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\boringssl-build\build\crypto.vcxproj">
+      <Project>{F7FD9B96-B0EC-3E47-AA46-EAE1CC894440}</Project>
+      <Name>crypto</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

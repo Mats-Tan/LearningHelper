@@ -1,0 +1,1162 @@
+Performing C++ SOURCE FILE Test ABSL_INTERNAL_AT_LEAST_CXX17 failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_5b1cb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  src.cxx
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\src.cxx(3,1): fatal  error C1189: #error:  "The compiler defaults or is configured for C++ < 17" [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_5b1cb.vcxproj]
+
+
+Source file was:
+#ifdef _MSC_VER
+#  if _MSVC_LANG < 201700L
+#    error "The compiler defaults or is configured for C++ < 17"
+#  endif
+#elif __cplusplus < 201700L
+#  error "The compiler defaults or is configured for C++ < 17"
+#endif
+int main() { return 0; }
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_4357d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  src.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\src.c(1,10): fatal  error C1083: 无法打开包括文件: “pthread.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_4357d.vcxproj]
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2bbaa.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckFunctionExists.c
+LINK : fatal error LNK1104: 无法打开文件“pthreads.lib” [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_2bbaa.vcxproj]
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_e8940.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckFunctionExists.c
+LINK : fatal error LNK1104: 无法打开文件“pthread.lib” [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_e8940.vcxproj]
+
+
+
+Determining if the function res_servicename exists failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_832f4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckFunctionExists.c
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 res_servicename，函数 main 中引用了该符号 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_832f4.vcxproj]
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\Debug\cmTC_832f4.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_832f4.vcxproj]
+
+
+
+Determining if the function res_servicename exists in the resolv failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_a885a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckFunctionExists.c
+LINK : fatal error LNK1104: 无法打开文件“resolv.lib” [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_a885a.vcxproj]
+
+
+
+Determining if the function gethostbyname exists failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_9f7f8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckFunctionExists.c
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 gethostbyname，函数 main 中引用了该符号 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_9f7f8.vcxproj]
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\Debug\cmTC_9f7f8.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_9f7f8.vcxproj]
+
+
+
+Determining if the function gethostbyname exists in the nsl failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ab5b9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckFunctionExists.c
+LINK : fatal error LNK1104: 无法打开文件“nsl.lib” [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_ab5b9.vcxproj]
+
+
+
+Determining if the function gethostbyname exists in the socket failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_8bf0b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckFunctionExists.c
+LINK : fatal error LNK1104: 无法打开文件“socket.lib” [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_8bf0b.vcxproj]
+
+
+
+Determining if the function gethostbyname exists in the network failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_5c82c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckFunctionExists.c
+LINK : fatal error LNK1104: 无法打开文件“network.lib” [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_5c82c.vcxproj]
+
+
+
+Determining if the function socket exists failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_df35a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckFunctionExists.c
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 socket，函数 main 中引用了该符号 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_df35a.vcxproj]
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\Debug\cmTC_df35a.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_df35a.vcxproj]
+
+
+
+Determining if the function socket exists in the socket failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_12838.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckFunctionExists.c
+LINK : fatal error LNK1104: 无法打开文件“socket.lib” [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_12838.vcxproj]
+
+
+
+Determining if the function clock_gettime exists failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_07fbd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckFunctionExists.c
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 clock_gettime，函数 main 中引用了该符号 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_07fbd.vcxproj]
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\Debug\cmTC_07fbd.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_07fbd.vcxproj]
+
+
+
+Determining if the function clock_gettime exists in the rt failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2ef76.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckFunctionExists.c
+LINK : fatal error LNK1104: 无法打开文件“rt.lib” [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_2ef76.vcxproj]
+
+
+
+Determining if files sys/socket.h exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_33425.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  HAVE_SYS_SOCKET_H.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_SOCKET_H.c(2,10): fatal  error C1083: 无法打开包括文件: “sys/socket.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_33425.vcxproj]
+
+
+Source:
+/* */
+#include <sys/socket.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/sockio.h exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_7f3d4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  HAVE_SYS_SOCKIO_H.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_SOCKIO_H.c(2,10): fatal  error C1083: 无法打开包括文件: “sys/sockio.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_7f3d4.vcxproj]
+
+
+Source:
+/* */
+#include <sys/sockio.h>
+
+
+int main(void){return 0;}
+
+Determining if files arpa/inet.h exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_1580f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  HAVE_ARPA_INET_H.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_INET_H.c(2,10): fatal  error C1083: 无法打开包括文件: “arpa/inet.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_1580f.vcxproj]
+
+
+Source:
+/* */
+#include <arpa/inet.h>
+
+
+int main(void){return 0;}
+
+Determining if files arpa/nameser_compat.h exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_c6533.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  HAVE_ARPA_NAMESER_COMPAT_H.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_NAMESER_COMPAT_H.c(2,10): fatal  error C1083: 无法打开包括文件: “arpa/nameser_compat.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_c6533.vcxproj]
+
+
+Source:
+/* */
+#include <arpa/nameser_compat.h>
+
+
+int main(void){return 0;}
+
+Determining if files arpa/nameser.h exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_41256.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  HAVE_ARPA_NAMESER_H.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_NAMESER_H.c(2,10): fatal  error C1083: 无法打开包括文件: “arpa/nameser.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_41256.vcxproj]
+
+
+Source:
+/* */
+#include <arpa/nameser.h>
+
+
+int main(void){return 0;}
+
+Determining if files netdb.h exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_425c9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  HAVE_NETDB_H.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CheckIncludeFiles\HAVE_NETDB_H.c(2,10): fatal  error C1083: 无法打开包括文件: “netdb.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_425c9.vcxproj]
+
+
+Source:
+/* */
+#include <netdb.h>
+
+
+int main(void){return 0;}
+
+Determining if files netinet/in.h exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2ec30.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  HAVE_NETINET_IN_H.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_IN_H.c(2,10): fatal  error C1083: 无法打开包括文件: “netinet/in.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_2ec30.vcxproj]
+
+
+Source:
+/* */
+#include <netinet/in.h>
+
+
+int main(void){return 0;}
+
+Determining if files net/if.h exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_6acf4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  HAVE_NET_IF_H.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CheckIncludeFiles\HAVE_NET_IF_H.c(2,10): fatal  error C1083: 无法打开包括文件: “net/if.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_6acf4.vcxproj]
+
+
+Source:
+/* */
+#include <net/if.h>
+
+
+int main(void){return 0;}
+
+Determining if files socket.h exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ff9eb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  HAVE_SOCKET_H.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CheckIncludeFiles\HAVE_SOCKET_H.c(2,10): fatal  error C1083: 无法打开包括文件: “socket.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_ff9eb.vcxproj]
+
+
+Source:
+/* */
+#include <socket.h>
+
+
+int main(void){return 0;}
+
+Determining if files strings.h exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_47583.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  HAVE_STRINGS_H.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CheckIncludeFiles\HAVE_STRINGS_H.c(2,10): fatal  error C1083: 无法打开包括文件: “strings.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_47583.vcxproj]
+
+
+Source:
+/* */
+#include <strings.h>
+
+
+int main(void){return 0;}
+
+Determining if files stropts.h exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_5c0b8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  HAVE_STROPTS_H.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CheckIncludeFiles\HAVE_STROPTS_H.c(2,10): fatal  error C1083: 无法打开包括文件: “stropts.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_5c0b8.vcxproj]
+
+
+Source:
+/* */
+#include <stropts.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/ioctl.h exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_36d3a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  HAVE_SYS_IOCTL_H.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c(2,10): fatal  error C1083: 无法打开包括文件: “sys/ioctl.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_36d3a.vcxproj]
+
+
+Source:
+/* */
+#include <sys/ioctl.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/param.h exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_6cca5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  HAVE_SYS_PARAM_H.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c(2,10): fatal  error C1083: 无法打开包括文件: “sys/param.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_6cca5.vcxproj]
+
+
+Source:
+/* */
+#include <sys/param.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/select.h exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_a4cd2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  HAVE_SYS_SELECT_H.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_SELECT_H.c(2,10): fatal  error C1083: 无法打开包括文件: “sys/select.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_a4cd2.vcxproj]
+
+
+Source:
+/* */
+#include <sys/select.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/time.h exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_1fb73.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  HAVE_SYS_TIME_H.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c(2,10): fatal  error C1083: 无法打开包括文件: “sys/time.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_1fb73.vcxproj]
+
+
+Source:
+/* */
+#include <sys/time.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/uio.h exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_7c303.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  HAVE_SYS_UIO_H.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UIO_H.c(2,10): fatal  error C1083: 无法打开包括文件: “sys/uio.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_7c303.vcxproj]
+
+
+Source:
+/* */
+#include <sys/uio.h>
+
+
+int main(void){return 0;}
+
+Determining if files dlfcn.h exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_0101d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  HAVE_DLFCN_H.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CheckIncludeFiles\HAVE_DLFCN_H.c(2,10): fatal  error C1083: 无法打开包括文件: “dlfcn.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_0101d.vcxproj]
+
+
+Source:
+/* */
+#include <dlfcn.h>
+
+
+int main(void){return 0;}
+
+Determining if files unistd.h exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_efe25.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  HAVE_UNISTD_H.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c(2,10): fatal  error C1083: 无法打开包括文件: “unistd.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_efe25.vcxproj]
+
+
+Source:
+/* */
+#include <unistd.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;netinet/tcp.h exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_c3b5e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  HAVE_NETINET_TCP_H.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_TCP_H.c(3,10): fatal  error C1083: 无法打开包括文件: “netinet/tcp.h”: No such file or directory [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_c3b5e.vcxproj]
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <netinet/tcp.h>
+
+
+int main(void){return 0;}
+
+Performing C SOURCE FILE Test HAVE_SSIZE_T failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_417f9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  src.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\src.c(16,12): error C2065: “ssize_t”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_417f9.vcxproj]
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\src.c(16,12): error C2146: 语法错误: 缺少“;”(在标识符“var_exists”的前面) [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_417f9.vcxproj]
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\src.c(16,22): error C2065: “var_exists”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_417f9.vcxproj]
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\src.c(17,20): error C2065: “var_exists”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_417f9.vcxproj]
+
+
+Source file was:
+
+		#include <stdio.h>
+		#include <stdlib.h>
+	
+		#include <stdbool.h>
+		#include <sys/types.h>
+		#include <signal.h>
+		#include <stdlib.h>
+		#include <string.h>
+		#include <time.h>
+		#include <fcntl.h>
+		#include <winsock2.h>
+		#include <ws2tcpip.h>
+		#include <windows.h>
+		int main() {
+			ssize_t var_exists;
+			(void)var_exists;
+			return 0;
+		}
+	
+Determining if the O_NONBLOCK exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_3af91.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,29): error C2065: “O_NONBLOCK”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_3af91.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef O_NONBLOCK
+  return ((int*)(&O_NONBLOCK))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the SIOCGIFADDR exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_5f5b5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,30): error C2065: “SIOCGIFADDR”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_5f5b5.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef SIOCGIFADDR
+  return ((int*)(&SIOCGIFADDR))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the MSG_NOSIGNAL exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_30209.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,31): error C2065: “MSG_NOSIGNAL”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_30209.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef MSG_NOSIGNAL
+  return ((int*)(&MSG_NOSIGNAL))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the SO_NONBLOCK exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_fcfa6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,30): error C2065: “SO_NONBLOCK”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_fcfa6.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef SO_NONBLOCK
+  return ((int*)(&SO_NONBLOCK))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the CLOCK_MONOTONIC exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_1ea2d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,34): error C2065: “CLOCK_MONOTONIC”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_1ea2d.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CLOCK_MONOTONIC
+  return ((int*)(&CLOCK_MONOTONIC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the bitncmp exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_17c1e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,26): error C2065: “bitncmp”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_17c1e.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef bitncmp
+  return ((int*)(&bitncmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the CloseSocket exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_59368.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,30): error C2065: “CloseSocket”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_59368.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CloseSocket
+  return ((int*)(&CloseSocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fcntl exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_99d6e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,24): error C2065: “fcntl”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_99d6e.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fcntl
+  return ((int*)(&fcntl))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getservbyport_r exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2d567.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,34): error C2065: “getservbyport_r”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_2d567.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getservbyport_r
+  return ((int*)(&getservbyport_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getservbyname_r exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_333dd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,34): error C2065: “getservbyname_r”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_333dd.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getservbyname_r
+  return ((int*)(&getservbyname_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the gettimeofday exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_3100f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,31): error C2065: “gettimeofday”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_3100f.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef gettimeofday
+  return ((int*)(&gettimeofday))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the if_indextoname exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_3c8e7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,33): error C2065: “if_indextoname”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_3c8e7.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef if_indextoname
+  return ((int*)(&if_indextoname))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the inet_net_pton exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_fc02e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,32): error C2065: “inet_net_pton”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_fc02e.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef inet_net_pton
+  return ((int*)(&inet_net_pton))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the ioctl exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_0da63.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,24): error C2065: “ioctl”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_0da63.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef ioctl
+  return ((int*)(&ioctl))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the IoctlSocket exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_37db7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,30): error C2065: “IoctlSocket”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_37db7.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IoctlSocket
+  return ((int*)(&IoctlSocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strcasecmp exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_1e58e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,29): error C2065: “strcasecmp”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_1e58e.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcasecmp
+  return ((int*)(&strcasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strncasecmp exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_3b7b1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,30): error C2065: “strncasecmp”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_3b7b1.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncasecmp
+  return ((int*)(&strncasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strncmpi exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_dea68.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,27): error C2065: “strncmpi”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_dea68.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncmpi
+  return ((int*)(&strncmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the writev exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_38b66.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,25): error C2065: “writev”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_38b66.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef writev
+  return ((int*)(&writev))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the arc4random_buf exist failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_cb461.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckSymbolExists.c
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(17,33): error C2065: “arc4random_buf”: 未声明的标识符 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_cb461.vcxproj]
+
+
+File E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef arc4random_buf
+  return ((int*)(&arc4random_buf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function __system_property_get exists failed with the following output:
+Change Dir: E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_521ce.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  CheckFunctionExists.c
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 __system_property_get，函数 main 中引用了该符号 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_521ce.vcxproj]
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\Debug\cmTC_521ce.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\grpcio-sys-edb856ffc39f27b3\out\build\CMakeFiles\CMakeTmp\cmTC_521ce.vcxproj]
+
+
+

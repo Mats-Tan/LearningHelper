@@ -1,0 +1,11 @@
+# CMake generation dependency list for this directory.
+D:/Environment/CMake/share/cmake-3.24/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+D:/Environment/CMake/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CTest.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CTestTargets.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/CTestUseLaunchers.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/DartConfiguration.tcl.in
+D:/Environment/CMake/share/cmake-3.24/Modules/GNUInstallDirs.cmake
+D:/Environment/CMake/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake
+D:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc/third_party/re2/CMakeLists.txt
+D:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc/third_party/re2/re2Config.cmake.in

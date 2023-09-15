@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\synchronization\barrier.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\synchronization\blocking_counter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\synchronization\internal\create_thread_identity.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\synchronization\internal\per_thread_sem.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\synchronization\internal\waiter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\synchronization\notification.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\synchronization\mutex.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\synchronization\barrier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\synchronization\blocking_counter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\synchronization\internal\create_thread_identity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\synchronization\internal\futex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\synchronization\internal\per_thread_sem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\synchronization\internal\waiter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\synchronization\mutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\synchronization\notification.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\synchronization\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D6ED0802-47EB-37B2-BBD8-E1009C6CC238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8B4F5E81-F15F-37A3-B6A9-F7C6F65500AF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

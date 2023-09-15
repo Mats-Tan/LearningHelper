@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\time\internal\cctz\src\time_zone_fixed.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\time\internal\cctz\src\time_zone_format.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\time\internal\cctz\src\time_zone_if.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\time\internal\cctz\src\time_zone_impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\time\internal\cctz\src\time_zone_info.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\time\internal\cctz\src\time_zone_libc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\time\internal\cctz\src\time_zone_lookup.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\time\internal\cctz\src\time_zone_posix.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\time\internal\cctz\src\zone_info_source.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\time\internal\cctz\src\time_zone_fixed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\time\internal\cctz\src\time_zone_if.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\time\internal\cctz\src\time_zone_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\time\internal\cctz\src\time_zone_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\time\internal\cctz\src\time_zone_libc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\time\internal\cctz\src\time_zone_posix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\time\internal\cctz\src\tzfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\time\internal\cctz\include\cctz\time_zone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\time\internal\cctz\include\cctz\zone_info_source.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\grpcio-sys-0.13.0+1.56.2-patched\grpc\third_party\abseil-cpp\absl\time\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D6ED0802-47EB-37B2-BBD8-E1009C6CC238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8B4F5E81-F15F-37A3-B6A9-F7C6F65500AF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

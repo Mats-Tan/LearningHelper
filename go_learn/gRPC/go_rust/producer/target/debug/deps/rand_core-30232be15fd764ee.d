@@ -1,0 +1,12 @@
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\deps\rand_core-30232be15fd764ee.rmeta: D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\lib.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\block.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\error.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\impls.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\le.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\os.rs
+
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\deps\librand_core-30232be15fd764ee.rlib: D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\lib.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\block.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\error.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\impls.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\le.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\os.rs
+
+E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\deps\rand_core-30232be15fd764ee.d: D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\lib.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\block.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\error.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\impls.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\le.rs D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\os.rs
+
+D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\lib.rs:
+D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\block.rs:
+D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\error.rs:
+D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\impls.rs:
+D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\le.rs:
+D:\Environment\rust\registry\src\rsproxy.cn-8f6827c7555bfaf8\rand_core-0.6.4\src\os.rs:

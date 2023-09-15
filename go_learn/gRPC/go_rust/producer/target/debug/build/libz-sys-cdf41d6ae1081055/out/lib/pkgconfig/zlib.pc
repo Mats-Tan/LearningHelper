@@ -1,0 +1,13 @@
+prefix=E:\CodeSpace\LearningHelper\go_learn\gRPC\go_rust\producer\target\debug\build\libz-sys-cdf41d6ae1081055\out
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+sharedlibdir=@sharedlibdir@
+includedir=@includedir@
+
+Name: zlib
+Description: zlib compression library
+Version: @VERSION@
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

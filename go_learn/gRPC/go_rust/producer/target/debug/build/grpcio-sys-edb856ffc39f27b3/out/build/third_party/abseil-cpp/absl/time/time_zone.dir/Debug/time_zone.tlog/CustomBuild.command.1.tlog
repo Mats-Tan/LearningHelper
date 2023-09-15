@@ -1,0 +1,10 @@
+^D:\ENVIRONMENT\RUST\REGISTRY\SRC\RSPROXY.CN-8F6827C7555BFAF8\GRPCIO-SYS-0.13.0+1.56.2-PATCHED\GRPC\THIRD_PARTY\ABSEIL-CPP\ABSL\TIME\CMAKELISTS.TXT
+setlocal
+D:\Environment\CMake\bin\cmake.exe -SD:/Environment/rust/registry/src/rsproxy.cn-8f6827c7555bfaf8/grpcio-sys-0.13.0+1.56.2-patched/grpc -BE:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build --check-stamp-file E:/CodeSpace/LearningHelper/go_learn/gRPC/go_rust/producer/target/debug/build/grpcio-sys-edb856ffc39f27b3/out/build/third_party/abseil-cpp/absl/time/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
