@@ -18,3 +18,26 @@ function demo() {
 }
 ```
 
+# My Chapter 1: Prepare My Vim
+
+1. download nvim from source
+
+2. write init.vim in `~/.config/nvim/`
+
+3. download vim-plug to `nvim/lua`
+
+4. install `coc.nvim` by follow code
+
+   ```bash
+   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+   ```
+
+   
+
+5. install `marketplace` for `coc.nvim`: `:CocInstall coc-marketplace`
+
+   
+
+   If I want a better writing experience, I should install more plugins via vim-plug.
+
+   
